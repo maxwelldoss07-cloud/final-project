@@ -1,0 +1,185 @@
+/* resources used: https://www.w3schools.com/colors/colors_names.asp*/
+
+/*general styling*/
+
+body {
+  background-color: #556b2f;
+  color: #f5f0e8;
+  font-size: 18px;
+}
+
+h1,
+h2 {
+  color: #e8d5a3;
+}
+
+/*header styling*/
+
+#header {
+  text-align: center;
+  padding: 30px 20px 10px 20px;
+}
+
+/*library note styling*/
+
+#library-note {
+  text-align: center;
+  font-size: 14px;
+  color: #c8d8b0;
+  margin: 0 0 10px 0;
+}
+
+/*search bar styling*/
+
+#search-bar {
+  width: 50%;
+  padding: 12px 16px;
+  font-size: 16px;
+  border-radius: 25px;
+  border: 2px solid #e8d5a3;
+  background-color: #3a4a20;
+  color: #f5f0e8;
+  margin-top: 10px;
+}
+
+#search-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  margin-top: 10px;
+}
+
+#analyze-btn {
+  padding: 12px 24px;
+  font-size: 16px;
+  border-radius: 25px;
+  border: 2px solid #e8d5a3;
+  background-color: #3a4a20;
+  color: #e8d5a3;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+#analyze-btn:hover {
+  background-color: #556b2f;
+}
+
+/*song card grid layout*/
+
+#song-display {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 10px;
+  padding: 20px;
+}
+
+/*song title on the card*/
+
+.song-title {
+  display: block;
+  font-weight: bold;
+  font-size: 14px;
+  color: #f5f0e8;
+}
+
+/*song artist on the card*/
+
+.song-artist {
+  display: block;
+  font-size: 12px;
+  color: #c8d8b0;
+}
+
+/*song cards appearance*/
+
+.song-card {
+  background-color: #3a4a20;
+  color: #ffffff;
+  border: 2px solid #556b2f;
+  border-radius: 10px;
+  padding: 12px 16px;
+  width: 200px;
+  cursor: pointer;
+  font-size: 14px;
+  text-align: center;
+  transition:
+    background-color 0.2s,
+    border-color 0.2s;
+}
+
+/*hover effects and interactivity*/
+
+.song-card:hover {
+  background-color: #4a5e28;
+  border-color: #c8d8b0;
+}
+
+/*selected song card appearance*/
+
+.song-card.selected {
+  background-color: #6a8a35;
+  border-color: #e8d5a3;
+  color: #ffffff;
+}
+
+/*top genre in breakdown*/
+
+.top-genre {
+  font-size: 1.4em;
+  color: #f5f0e8;
+}
+
+/*recommendation card styling*/
+
+.recommendation-card,
+.discovery-card {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 6px 0;
+}
+
+/*save button styling*/
+
+.recommendation-card button {
+  padding: 6px 14px;
+  font-size: 14px;
+  border-radius: 20px;
+  border: 2px solid #c8d8b0;
+  background-color: #3a4a20;
+  color: #c8d8b0;
+  cursor: pointer;
+  transition:
+    background-color 0.2s,
+    border-color 0.2s;
+  white-space: nowrap;
+}
+
+.recommendation-card button:hover {
+  background-color: #4e6e2e;
+  border-color: #e8d5a3;
+  color: #e8d5a3;
+}
+
+/*remove button styling*/
+
+.discovery-card button {
+  padding: 6px 14px;
+  font-size: 14px;
+  border-radius: 20px;
+  border: 2px solid #c8d8b0;
+  background-color: #3a4a20;
+  color: #c8d8b0;
+  cursor: pointer;
+  transition:
+    background-color 0.2s,
+    border-color 0.2s;
+  white-space: nowrap;
+}
+
+.discovery-card button:hover {
+  background-color: #4e6e2e;
+  border-color: #e8d5a3;
+  color: #e8d5a3;
+}

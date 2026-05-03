@@ -1,0 +1,63 @@
+<!-- a search/filter box with input -->
+<!-- song card display -->
+<!-- analysis button -->
+<!-- genre breakdown results -->
+<!-- recommendations based on genre breakdown -->
+<!-- saved discoveries list -->
+<!-- links to style.css and script.js -->
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Find My Genre</title>
+  </head>
+  <body>
+    <div id="header">
+      <h1>Find My Genre</h1>
+      <p>
+        Welcome to Find My Genre! Discover your music taste by analyzing your
+        discovery songs and artists. Use the search box to find songs or
+        artists, analyze your genre preferences, and get personalized
+        recommendations. Save your discoveries and explore new music tailored to
+        your unique taste!
+      </p>
+
+      <!-- tutorial: https://medium.com/@cgustin/tutorial-simple-search-filter-with-vanilla-javascript-fdd15b7640bf -->
+      <!-- search box -->
+      <input
+        type="search"
+        id="search-bar"
+        placeholder="Search songs or artists..."
+        oninput="filterByName(event)"
+      />
+      <!-- analysis button -->
+      <button id="analyze-btn" onclick="analyzeGenres()">
+        Analyze My Taste
+      </button>
+    </div>
+
+    <p id="library-note">
+      The song library holds 100 songs, 10 songs for each of the ten genres:
+      Hip-Hop/Rap, Pop, R&B, Rock, Electronic/Dance, Country, Latin,
+      Alternative/Indie, K-Pop, and Reggaeton/Trap-Latin. Use the search box to
+      search the entrie library.
+    </p>
+
+    <!-- song card display -->
+    <div id="song-display"></div>
+
+    <!-- genre breakdown results -->
+    <div id="genre-results"></div>
+
+    <!-- recommendations based on genre breakdown -->
+    <div id="recommendations"></div>
+
+    <!-- saved discoveries list -->
+    <div id="discoveries"></div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
